@@ -1,4 +1,6 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Titillium_Web } from 'next/font/google';
+
 import './globals.css';
 
 const titillium = Titillium_Web({
@@ -21,6 +23,7 @@ export default function RootLayout({
       <body className={`${titillium.className} bg-[#1e1e1e] mt-6`}>
         {children}
       </body>
+      <Analytics />
     </html>
   );
 }
