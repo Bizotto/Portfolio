@@ -8,6 +8,7 @@ import {
   EnvelopeIcon,
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import backend from '../assets/backend.svg';
 import reBuild from '../assets/brands/reBuild.svg';
 import code from '../assets/code.svg';
 import nick from '../assets/images/nick.jpg';
@@ -32,7 +33,7 @@ export default function Home() {
           </div>
           <div className="flex-row justify-center">
             <p className="text-2xl text-center text-[#5A5A5A]">
-              Olá 👋🏻,
+              Olá 👋🏻
               <br /> Me chamo Nicolas
             </p>
 
@@ -60,33 +61,33 @@ export default function Home() {
           <Image width={100} height={100} src={reBuild} alt="profile Pic" />
         </div>
 
-        <div className="">
+        <div>
           <p className="text-3xl font-extrabold text-center bg-clip-text bg-gradient-to-r text-transparent from-[#342900d4]  to-[#949012]">
             Colaborando com marcas e empresas <br />
             para criar resultados impactantes.
           </p>
         </div>
 
-        <div className="flex flex-row gap-4 justify-between sm: flex-wrap">
+        <div className="flex gap-4 justify-between flex-wrap max-md:justify-center">
           <Card
             image={uiux}
-            title="UI/UX"
-            description="Crio interfaces de usuário intuitivas e agradáveis, com foco na experiência do usuário."
-          />
-          <Card
-            image={code}
-            title="DESIGN"
-            description="Crio designs de tirar seu folego para te conectar com a sua audiência."
+            title="MOBILE"
+            description="Crio aplicativos com as tecnologias mais atuais como React-native e EXPO."
           />
           <Card
             image={mobile}
-            title="MOBILE & WEB"
-            description="Criatividade e responsividade tanto para aplicações mobile quanto para web."
+            title="WEB"
+            description="Desenvolvendo aplicações Web com as tecnologias mais atuais como NEXT e tailwind."
+          />
+          <Card
+            image={backend}
+            title="BACKEND"
+            description="Criando Backends com NEST e NodeJS para servidores robustos e responsivos."
           />
           <Card
             image={code}
             title="CODE STYLE"
-            description="Trazendo a vida do seu site com as melhores tecnologias e estilos do momento."
+            description="Trazendo a vida do seu site com Typescript para ter maior produtividade."
           />
         </div>
         <Line />
@@ -97,14 +98,13 @@ export default function Home() {
           </h1>
           <Button
             target="_blank"
-            link="https://wa.me/48984793284/?text="
+            link="https://wa.me/48984793284/?text=Olá%20Nicolas%20Bizotto,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
             text="Entre em contato"
             title="Contato"
           >
             <EnvelopeIcon className="text-[#8B7F54]" width={30} height={30} />
           </Button>
         </div>
-
         <Line />
       </div>
       <Footer />
